@@ -28,6 +28,7 @@ Bu çalışmada, Kafka kullanımı test edilmiştir. Mikroservislerin nasıl kul
  - **39092:** Kafka broker port
  - **49092:** Kafka broker port
 
+### Kurulum Sırası
 1. **Kafka Broker ve Controller'ları Kuralım**
     ```sh
                    $> cd docker-kafka
