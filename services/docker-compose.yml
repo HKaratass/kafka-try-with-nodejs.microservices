@@ -1,0 +1,49 @@
+version: '3'
+
+services:
+    email-service:
+        container_name: node_email_service_hk
+        build: 
+            context: ./email-service
+        networks:
+            - micro
+    inventory-service:
+        container_name: node_inventory_service_hk
+        build: 
+            context: ./inventory-service
+        expose:
+            - "3002"
+        networks:
+            - micro
+    pay-service:
+        container_name: node_pay_service_hk
+        build: 
+            context: ./pay-service
+        ports:
+            - '3001:3001'
+        networks:
+            - micro
+    shipping-service:
+        container_name: node_shipping_service_hk
+        build: 
+            context: ./shipping-service
+        expose:
+            - "3003"
+        networks:
+            - micro
+    sms-service:
+        container_name: node_sms_service_hk
+        build: 
+            context: ./sms-service
+        networks:
+            - micro
+            
+# depends_on:
+#     - broker-1
+#     - broker-2
+#     - broker-3
+
+networks:
+  micro:
+    external: true
+    name: micro

@@ -1,0 +1,22 @@
+{
+    "adress": "ANKARA",
+    "order": [
+        {
+            "product_id": 12,
+            "amount": 3
+        },
+        {
+            "product_id": 22,
+            "amount": 1
+        },
+        {
+            "product_id": 334,
+            "amount": 6
+        }
+    ],
+    "fake-credential": {
+        "jwt": {
+            "id" : 78
+        }
+    }
+}
