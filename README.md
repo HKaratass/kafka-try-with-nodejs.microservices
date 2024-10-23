@@ -37,6 +37,8 @@ Bu çalışmada, Kafka kullanımı test edilmiştir. Mikroservislerin nasıl kul
     ```
 2. **Gerekli Topicleri Ekleyelim**
     ```sh
+    # Repo Windows üzerinden klonlandığında init-kafka.sh için dos2unix gerekecektir.
+    # dos2unix init-kafka.sh
     $> docker exec -it kafka-main-broker_hk sh /home/init-kafka.sh
     ```
 3. **Mikroservisleri Başlatalım**
